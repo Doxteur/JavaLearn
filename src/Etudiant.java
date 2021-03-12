@@ -21,7 +21,7 @@ public class Etudiant {
 		System.out.println("Je laisse mes chiens se presenter");
 		System.out.println(" ");
 		for(int i = 0; i < chenil.size(); i++){
-		chenil.get(i).SePresenter();
+		//chenil.get(i).SePresenter();
 		}
 	}
 
@@ -32,6 +32,7 @@ public class Etudiant {
 	public void setCochon(Cochon cochon) {
 		this.cochon = cochon;
 	}
+	/*
 	public void faireUneAction(String action,Chien chien) {
 		
 		if(action.equals("a")) {
@@ -43,9 +44,9 @@ public class Etudiant {
 			
 			cochon.attackAvecMagie(chien);
 		}
-		
+		*/
 		
 	}
 	
 	
-}
+

@@ -20,10 +20,10 @@ public class poesmann {
          */
         
         
-        Chien newChien = new Chien(45,5,"choupie","Bichon",40);
+        Chien newChien = new Chien("vert",15,15,"bernard");
 
-        Chien newnewChien = new Chien(55,3,"lechienNull","Labrador",200);
-        
+        Chien newnewChien = new Chien("rouge",15,15,"jean");
+        newChien.sePresenter();
 
         //Crée une list de type chien 
         List<Chien> chenil = new ArrayList<Chien>();
@@ -43,26 +43,27 @@ public class poesmann {
         newEtudiant.sePresenter();
         
         //Partie du cochon
+        
         Cochon monCochon = new Cochon("bernard", 35, 90, 15,20,50,30);
         newEtudiant.setCochon(monCochon);
-        System.out.println("Attention " + monCochon.getPrenom() + " attaque " + newnewChien.getNom());
+        //System.out.println("Attention " + monCochon.getPrenom() + " attaque " + newnewChien.getNom());
         
-     
+        //monCochon.seDeplacer();
         //Partie combat 
-        System.out.println("Attention le chien : " + newnewChien.getNom() + " est apparue," + " Il a " + newnewChien.getLife()  + " point de vie, que faire ?");
+        //System.out.println("Attentxion le chien : " + newnewChien.getNom() + " est apparue," + " Il a " + newnewChien.getLife()  + " point de vie, que faire ?");
         
         Scanner scanner = new Scanner(System.in);
         
         //Combat
-        do {
+       // do {
         	
         	System.out.println("Attaquer ? Se défendre ? ou Magie ? (a ou d ou m)");
         	String a = scanner.nextLine();
-        	newEtudiant.faireUneAction(a, newnewChien);
+        	//newEtudiant.faireUneAction(a, newnewChien);
         
-        	System.out.println("La vie du chien est de " + newnewChien.getLife());
+        	//System.out.println("La vie du chien est de " + newnewChien.getLife());
 
-        	} while(newnewChien.getLife() > 0);
+        	//} while(newnewChien.getLife() > 0);
         scanner.close();
         }
 	}
